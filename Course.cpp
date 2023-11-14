@@ -1,4 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
+
+//Course.cpp
 #include "Course.h"
 #include <string.h>
 using namespace std;
@@ -6,7 +7,8 @@ using namespace std;
 //Constructor
 
 //Counstructor
-Course::Course() {};
+Course::Course(){}
+
 Course::Course(const int Course_num, char* Course_name, double Hw_weight, int Hw_counter) :
 	Course_num_(Course_num), Course_name_(new_name(Course_name)),
 	Hw_weight_(Hw_weight), Hw_counter_(Hw_counter), grades_(new int[Hw_counter]), ExamGrade_(0) {}
@@ -86,7 +88,7 @@ char* Course::new_name(char* name)
 	int length = strlen(name) + 1;
 	char* new_name = new char[length];
 
-	strcpy(new_name, name);
+	//strcpy(new_name, name);
 	strcpy_s(new_name, length,name);
 
 	return new_name;
