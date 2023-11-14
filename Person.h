@@ -11,14 +11,14 @@ class Person {
 public:
 	Person();
 	Person(int ID, char* PersonName);
-	~Person();
+	virtual ~Person();
 
 	//getters
 	int  getID();
 	char* getName();
 
 	//other functions
-	char* new_name(char* name); // function to copy name and allocate ne memmory
+	char* new_name(char* name);
 private:
 	int ID_;
 	char* PersonName_;

@@ -13,7 +13,7 @@ public:
 	Course();
 	//constructor that initiates Course_num,Course_name,Hw_weight,Hw_counter
 	Course(const int Course_num, char* Course_name, double Hw_weight, int Hw_counter);
-	~Course();
+	virtual ~Course();
 
 	//Methods to access data individually 
 	int getNum() const;

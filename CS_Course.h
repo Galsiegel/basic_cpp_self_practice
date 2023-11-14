@@ -13,9 +13,9 @@ public:
     int isTakef();
     char* getBook(); //must remmember to free memory
     int setTakef(bool value);
-    void SetBook(char* Course_Book); // Take a const char* parameter for the book
+    void SetBook(char* Course_Book); 
     int getCSCourseGrade();
-    //char* new_name(char* book_name);
+    
 
 private:
     bool flag_;
