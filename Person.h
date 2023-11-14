@@ -20,7 +20,7 @@ public:
 	//other functions
 	char* new_name(char* name);
 private:
-	int ID_;
-	char* PersonName_;
+	int ID_{};
+	char* PersonName_{};
 };
 #endif

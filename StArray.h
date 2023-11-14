@@ -21,6 +21,6 @@ public:
 
 private:
 	Student* students_[MAX_STUDENT_NUM];
-	int num_students_;
+	int num_students_{};
 };
 #endif	

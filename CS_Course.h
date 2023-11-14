@@ -18,7 +18,7 @@ public:
     
 
 private:
-    bool flag_;
-    char* book_; // Keep the data type as char*
+    bool flag_{};
+    char* book_{}; // Keep the data type as char*
 };
 #endif

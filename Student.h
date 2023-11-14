@@ -34,7 +34,7 @@ public:
 private:
 	EE_Course* EE_Courses_[MAX_COURSE_NUM];
 	CS_Course* CS_Courses_[MAX_COURSE_NUM];
-	int EE_NUM_, CS_NUM_;
+	int EE_NUM_, CS_NUM_{};
 
 };
 #endif

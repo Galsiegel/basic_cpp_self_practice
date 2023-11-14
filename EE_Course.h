@@ -13,7 +13,7 @@ public:
 	int setFactor(int Factor);
 	int getEECourseGrade();
 private:
-	int factor_;
+	int factor_{};
 };
 #endif // !EE_Course_H
 
