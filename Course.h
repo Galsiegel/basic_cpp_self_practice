@@ -33,12 +33,12 @@ public:
 
 private:
 
-	int Course_num_;
-	char* Course_name_;
-	double Hw_weight_;
-	int Hw_counter_;
-	int* grades_;
-	int ExamGrade_;
+	int Course_num_{};
+	char* Course_name_{};
+	double Hw_weight_{};
+	int Hw_counter_{};
+	int* grades_{};
+	int ExamGrade_{};
 };
 
 #endif
