@@ -5,7 +5,8 @@
 //constructours
 
 Person::Person() {};
-Person::Person(int ID, char* PersonName) : ID_(ID), PersonName_(new_name(PersonName)) {};
+Person::Person(int ID, char* PersonName) : ID_(ID), PersonName_(new_name(PersonName)) {
+    };
 
 //destructour
 
@@ -25,6 +26,10 @@ char* Person::getName() {
 
 // Make a new name
 char* Person::new_name(char* name) {
+    if (name == nullptr) {
+        return nullptr; // Return nullptr if the provided name is null
+    }
+    
     int length = strlen(name) + 1;
     char* new_name = new char[length];
     strcpy_s(new_name, length,name);
@@ -32,8 +37,6 @@ char* Person::new_name(char* name) {
   
     return new_name;
 }
-
-
 
 
 

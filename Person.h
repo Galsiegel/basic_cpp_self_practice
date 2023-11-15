@@ -17,10 +17,11 @@ public:
 	int  getID();
 	char* getName();
 
-	//other functions
-	char* new_name(char* name);
+	
+	
 private:
 	int ID_{};
 	char* PersonName_{};
+	char* new_name(char* name);
 };
 #endif
